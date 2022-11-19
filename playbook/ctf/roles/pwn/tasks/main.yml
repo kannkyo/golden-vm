@@ -1,0 +1,54 @@
+- name: Install apt packages
+  become: true
+  ansible.builtin.apt:
+    install_recommends: false
+    name:
+      # pwntools
+      - python3-dev
+      - build-essential
+      # nasm
+      - nasm
+      # seccomp tools
+      - gcc
+      - ruby-dev
+      # libc6-dbg
+      - libc6-dbg
+
+- name: Install git package - peda
+  ansible.builtin.git:
+    repo: https://github.com/longld/peda
+    dest: "{{ (lookup('env', 'HOME')) }}/peda"
+
+- name: Install git package pwngdb
+  ansible.builtin.git:
+    repo: https://github.com/scwuaptx/Pwngdb
+    dest: "{{ (lookup('env', 'HOME')) }}/Pwngdb"
+
+- name: Install git package gef
+  ansible.builtin.get_url:
+    url: https://github.com/hugsy/gef/raw/main/gef.py
+    dest: "{{ (lookup('env', 'HOME')) }}/.gdbinit-gef.py"
+
+- name: Install gem package - seccomp tools
+  become: true
+  community.general.gem:
+    name: seccomp-tools
+    state: latest
+
+- name: Install gem package - oneGadget
+  become: true
+  community.general.gem:
+    name: one_gadget
+    state: latest
+
+- name: Setup gdb
+  ansible.builtin.blockinfile:
+    path: "{{ (lookup('env', 'HOME')) }}/.gdbinit"
+    create: true
+    block: |
+      # peda
+      source ~/peda/peda.py
+      # gef
+      source ~/.gdbinit-gef.py
+      # pwngdb
+      tail -n +3 ~/Pwngdb/.gdbinit

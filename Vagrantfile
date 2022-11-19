@@ -4,7 +4,12 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/focal64"
   config.vm.box_check_update = false
-  
+
+  config.vagrant.plugins = [
+    "vagrant-disksize",
+    "vagrant-vbguest"
+  ]
+
   config.vm.provider "virtualbox" do |vb|
     vb.name = "ubuntu-focal64"
     vb.gui = false
@@ -12,15 +17,15 @@ Vagrant.configure("2") do |config|
     vb.memory = 2048
   end
 
-  config.vm.provision "file", source: "./playbook/", destination: "/home/vagrant/"
+  config.vm.provision "ansible_local" do |ansible|
+    ansible.playbook = "playbook/base/site.yml"
+  end
 
-  config.vm.provision "shell", inline: <<-SHELL
-    # Install ansible
-    apt-get install --no-install-recommends -y software-properties-common
-    apt-add-repository --yes --update ppa:ansible/ansible
-    apt-get install --no-install-recommends -y ansible
+  config.vm.provision "ansible_local" do |ansible|
+    ansible.playbook = "playbook/ctf/site.yml"
+  end
 
-    # Provisioning by ansible
-    ansible-playbook -v -b -i /dev/null /home/vagrant/playbook/site.yml; exit 0
-  SHELL
+  config.vm.provision "ansible_local" do |ansible|
+    ansible.playbook = "playbook/stig/site.yml"
+  end
 end

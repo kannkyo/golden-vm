@@ -1,0 +1,5 @@
+- name: Base playbook
+  hosts: all
+  # connection: local
+  roles:
+    - pwn
