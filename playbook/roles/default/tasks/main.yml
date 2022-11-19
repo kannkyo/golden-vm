@@ -1,0 +1,36 @@
+- name: Upgrade packages
+  ansible.builtin.apt:
+    upgrade: yes
+    update_cache: yes
+
+- name: Install utility packages
+  ansible.builtin.apt:
+    install_recommends: no
+    name:
+      - wget
+      - unzip
+      - ansible
+
+- name: Install ssg packages
+  ansible.builtin.apt:
+    install_recommends: no
+    name:
+      - ssg-base
+      - ssg-debderived
+      - ssg-debian
+      - ssg-nondebian
+      - ssg-applications 
+
+- name: Install oscap package
+  ansible.builtin.apt:
+    install_recommends: no
+    name:
+      - libopenscap8
+
+# see https://adamtheautomator.com/openscap/
+- name: Download scap security guide
+  ansible.builtin.unarchive:
+    src: https://github.com/ComplianceAsCode/content/releases/download/v0.1.64/scap-security-guide-0.1.64.zip
+    dest: /opt/
+    remote_src: yes
+    # validate_certs: no

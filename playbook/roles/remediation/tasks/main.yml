@@ -1,0 +1,10 @@
+# see http://static.open-scap.org/ssg-guides/ssg-ubuntu2004-guide-index.html
+- name: Execute oscap
+  ansible.builtin.shell:
+    cmd: |
+      oscap xccdf eval \
+        --remediate \
+        --results-arf /home/vagrant/ssg-ubuntu2004-results.xml \
+        --report /home/vagrant/ssg-ubuntu2004-report.html \
+        --profile xccdf_org.ssgproject.content_profile_cis_level2_workstation \
+        /opt/scap-security-guide-0.1.64/ssg-ubuntu2004-ds.xml
