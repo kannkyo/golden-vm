@@ -35,9 +35,10 @@ Vagrant.configure("2") do |config|
   #   ansible.playbook = "playbook/ctf/site.yml"
   # end
 
-  # config.vm.provision "ansible_local" do |ansible|
-  #   ansible.playbook = "playbook/ssg/site.yml"
-  # end
+  # FIXME: if use cis benchmark : [Errno 2] No such file or directory: b'/usr/sbin/aide'
+  config.vm.provision "ansible_local" do |ansible|
+    ansible.playbook = "playbook/ssg/ubuntu2004-playbook-standard.yml"
+  end
 
   config.vm.provision "ansible_local" do |ansible|
     ansible.playbook = "playbook/stig/site.yml"

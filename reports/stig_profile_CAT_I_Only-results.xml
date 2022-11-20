@@ -8433,7 +8433,7 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
           </ai:connection>
           <ai:connection>
             <ai:ip-address>
-              <ai:ip-v4>192.168.10.34</ai:ip-v4>
+              <ai:ip-v4>192.168.10.35</ai:ip-v4>
             </ai:ip-address>
           </ai:connection>
           <ai:connection>
@@ -8448,12 +8448,12 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
           </ai:connection>
           <ai:connection>
             <ai:ip-address>
-              <ai:ip-v6>2409:11:4ac0:2a00:a00:27ff:fedc:91c6</ai:ip-v6>
+              <ai:ip-v6>2409:11:4ac0:2a00:a00:27ff:fed0:b063</ai:ip-v6>
             </ai:ip-address>
           </ai:connection>
           <ai:connection>
             <ai:ip-address>
-              <ai:ip-v6>fe80:0:0:0:a00:27ff:fedc:91c6</ai:ip-v6>
+              <ai:ip-v6>fe80:0:0:0:a00:27ff:fed0:b063</ai:ip-v6>
             </ai:ip-address>
           </ai:connection>
           <ai:connection>
@@ -8463,7 +8463,7 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
             <ai:mac-address>02:1C:F9:F2:7B:02</ai:mac-address>
           </ai:connection>
           <ai:connection>
-            <ai:mac-address>08:00:27:DC:91:C6</ai:mac-address>
+            <ai:mac-address>08:00:27:D0:B0:63</ai:mac-address>
           </ai:connection>
           <ai:connection>
             <ai:mac-address>00:00:00:00:00:00</ai:mac-address>
@@ -8472,10 +8472,10 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
             <ai:mac-address>02:1C:F9:F2:7B:02</ai:mac-address>
           </ai:connection>
           <ai:connection>
-            <ai:mac-address>08:00:27:DC:91:C6</ai:mac-address>
+            <ai:mac-address>08:00:27:D0:B0:63</ai:mac-address>
           </ai:connection>
           <ai:connection>
-            <ai:mac-address>08:00:27:DC:91:C6</ai:mac-address>
+            <ai:mac-address>08:00:27:D0:B0:63</ai:mac-address>
           </ai:connection>
         </ai:connections>
         <ai:fqdn>ubuntu-focal</ai:fqdn>
@@ -8486,7 +8486,7 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
   <arf:reports>
     <arf:report id="xccdf1">
       <arf:content>
-        <TestResult xmlns="http://checklists.nist.gov/xccdf/1.2" id="xccdf_org.open-scap_testresult_xccdf_mil.disa.stig_profile_CAT_I_Only" start-time="2022-11-20T04:57:45" end-time="2022-11-20T04:57:45" version="001.004" test-system="cpe:/a:redhat:openscap:1.2.16">
+        <TestResult xmlns="http://checklists.nist.gov/xccdf/1.2" id="xccdf_org.open-scap_testresult_xccdf_mil.disa.stig_profile_CAT_I_Only" start-time="2022-11-20T05:27:21" end-time="2022-11-20T05:27:21" version="001.004" test-system="cpe:/a:redhat:openscap:1.2.16">
           <benchmark href="/opt/stigs/U_CAN_Ubuntu_20-04_LTS_V1R4_STIG_SCAP_1-2_Benchmark.xml" id="xccdf_mil.disa.stig_benchmark_Canonical_Ubuntu_20-04_LTS_STIG"/>
           <title>OSCAP Scan Result</title>
           <identity authenticated="false" privileged="false">vagrant</identity>
@@ -8494,170 +8494,170 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
           <target>ubuntu-focal</target>
           <target-address>127.0.0.1</target-address>
           <target-address>10.0.2.15</target-address>
-          <target-address>192.168.10.34</target-address>
+          <target-address>192.168.10.35</target-address>
           <target-address>0:0:0:0:0:0:0:1</target-address>
           <target-address>fe80:0:0:0:1c:f9ff:fef2:7b02</target-address>
-          <target-address>2409:11:4ac0:2a00:a00:27ff:fedc:91c6</target-address>
-          <target-address>fe80:0:0:0:a00:27ff:fedc:91c6</target-address>
+          <target-address>2409:11:4ac0:2a00:a00:27ff:fed0:b063</target-address>
+          <target-address>fe80:0:0:0:a00:27ff:fed0:b063</target-address>
           <target-facts>
             <fact name="urn:xccdf:fact:scanner:name" type="string">OpenSCAP</fact>
             <fact name="urn:xccdf:fact:scanner:version" type="string">1.2.16</fact>
             <fact name="urn:xccdf:fact:ethernet:MAC" type="string">00:00:00:00:00:00</fact>
             <fact name="urn:xccdf:fact:ethernet:MAC" type="string">02:1C:F9:F2:7B:02</fact>
-            <fact name="urn:xccdf:fact:ethernet:MAC" type="string">08:00:27:DC:91:C6</fact>
+            <fact name="urn:xccdf:fact:ethernet:MAC" type="string">08:00:27:D0:B0:63</fact>
             <fact name="urn:xccdf:fact:ethernet:MAC" type="string">00:00:00:00:00:00</fact>
             <fact name="urn:xccdf:fact:ethernet:MAC" type="string">02:1C:F9:F2:7B:02</fact>
-            <fact name="urn:xccdf:fact:ethernet:MAC" type="string">08:00:27:DC:91:C6</fact>
-            <fact name="urn:xccdf:fact:ethernet:MAC" type="string">08:00:27:DC:91:C6</fact>
+            <fact name="urn:xccdf:fact:ethernet:MAC" type="string">08:00:27:D0:B0:63</fact>
+            <fact name="urn:xccdf:fact:ethernet:MAC" type="string">08:00:27:D0:B0:63</fact>
           </target-facts>
           <target-id-ref system="http://scap.nist.gov/schema/asset-identification/1.1" name="asset0" href=""/>
           <platform idref="cpe:/o:canonical:ubuntu_linux:20.04"/>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238200r653775_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010005" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238200r653775_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010005" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000058</ident>
             <ident system="http://cyber.mil/cci">CCI-000060</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238201r832933_rule" time="2022-11-20T04:57:45" severity="high" version="UBTU-20-010006" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238201r832933_rule" time="2022-11-20T05:27:21" severity="high" version="UBTU-20-010006" weight="10.000000">
             <result>fail</result>
             <ident system="http://cyber.mil/cci">CCI-000187</ident>
             <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
               <check-content-ref name="oval:mil.disa.stig.ubuntu2004:def:101" href="#oval0"/>
             </check>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238202r653781_rule" time="2022-11-20T04:57:45" severity="low" version="UBTU-20-010007" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238202r653781_rule" time="2022-11-20T05:27:21" severity="low" version="UBTU-20-010007" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000198</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238203r653784_rule" time="2022-11-20T04:57:45" severity="low" version="UBTU-20-010008" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238203r653784_rule" time="2022-11-20T05:27:21" severity="low" version="UBTU-20-010008" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000199</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238204r832936_rule" time="2022-11-20T04:57:45" severity="high" version="UBTU-20-010009" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238204r832936_rule" time="2022-11-20T05:27:21" severity="high" version="UBTU-20-010009" weight="10.000000">
             <result>fail</result>
             <ident system="http://cyber.mil/cci">CCI-000213</ident>
             <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
               <check-content-ref name="oval:mil.disa.stig.ubuntu2004:def:104" href="#oval0"/>
             </check>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238208r853405_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010014" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238208r853405_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010014" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-002038</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238209r653802_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010016" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238209r653802_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010016" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000366</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238210r858517_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010033" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238210r858517_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010033" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000765</ident>
             <ident system="http://cyber.mil/cci">CCI-000766</ident>
             <ident system="http://cyber.mil/cci">CCI-000767</ident>
             <ident system="http://cyber.mil/cci">CCI-000768</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238211r858519_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010035" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238211r858519_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010035" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000877</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238212r858521_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010036" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238212r858521_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010036" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000879</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238213r858523_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010037" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238213r858523_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010037" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001133</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238216r860820_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010043" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238216r860820_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010043" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001453</ident>
             <ident system="http://cyber.mil/cci">CCI-002421</ident>
             <ident system="http://cyber.mil/cci">CCI-002890</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238217r860821_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010044" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238217r860821_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010044" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000068</ident>
             <ident system="http://cyber.mil/cci">CCI-002421</ident>
             <ident system="http://cyber.mil/cci">CCI-003123</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238218r858531_rule" time="2022-11-20T04:57:45" severity="high" version="UBTU-20-010047" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238218r858531_rule" time="2022-11-20T05:27:21" severity="high" version="UBTU-20-010047" weight="10.000000">
             <result>pass</result>
             <ident system="http://cyber.mil/cci">CCI-000366</ident>
             <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
               <check-content-ref name="oval:mil.disa.stig.ubuntu2004:def:114" href="#oval0"/>
             </check>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238219r858533_rule" time="2022-11-20T04:57:45" severity="high" version="UBTU-20-010048" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238219r858533_rule" time="2022-11-20T05:27:21" severity="high" version="UBTU-20-010048" weight="10.000000">
             <result>pass</result>
             <ident system="http://cyber.mil/cci">CCI-000366</ident>
             <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
               <check-content-ref name="oval:mil.disa.stig.ubuntu2004:def:115" href="#oval0"/>
             </check>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238220r858535_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010049" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238220r858535_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010049" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000366</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238221r653838_rule" time="2022-11-20T04:57:45" severity="low" version="UBTU-20-010050" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238221r653838_rule" time="2022-11-20T05:27:21" severity="low" version="UBTU-20-010050" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000192</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238222r653841_rule" time="2022-11-20T04:57:45" severity="low" version="UBTU-20-010051" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238222r653841_rule" time="2022-11-20T05:27:21" severity="low" version="UBTU-20-010051" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000193</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238223r653844_rule" time="2022-11-20T04:57:45" severity="low" version="UBTU-20-010052" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238223r653844_rule" time="2022-11-20T05:27:21" severity="low" version="UBTU-20-010052" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000194</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238224r653847_rule" time="2022-11-20T04:57:45" severity="low" version="UBTU-20-010053" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238224r653847_rule" time="2022-11-20T05:27:21" severity="low" version="UBTU-20-010053" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000195</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238225r832942_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010054" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238225r832942_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010054" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000205</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238226r653853_rule" time="2022-11-20T04:57:45" severity="low" version="UBTU-20-010055" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238226r653853_rule" time="2022-11-20T05:27:21" severity="low" version="UBTU-20-010055" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001619</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238227r653856_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010056" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238227r653856_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010056" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000366</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238228r653859_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010057" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238228r653859_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010057" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000366</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238229r653862_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010060" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238229r653862_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010060" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000185</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238230r853410_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010063" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238230r853410_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010063" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001948</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238231r853411_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010064" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238231r853411_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010064" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001953</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238232r853412_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010065" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238232r853412_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010065" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001954</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238233r853413_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010066" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238233r853413_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010066" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001991</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238235r853414_rule" time="2022-11-20T04:57:45" severity="low" version="UBTU-20-010072" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238235r853414_rule" time="2022-11-20T05:27:21" severity="low" version="UBTU-20-010072" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000044</ident>
             <ident system="http://cyber.mil/cci">CCI-002238</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238237r653886_rule" time="2022-11-20T04:57:45" severity="low" version="UBTU-20-010075" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238237r653886_rule" time="2022-11-20T05:27:21" severity="low" version="UBTU-20-010075" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000366</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238238r853416_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010100" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238238r853416_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010100" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000018</ident>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
@@ -8666,7 +8666,7 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
             <ident system="http://cyber.mil/cci">CCI-001405</ident>
             <ident system="http://cyber.mil/cci">CCI-002130</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238239r853417_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010101" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238239r853417_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010101" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000018</ident>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
@@ -8675,7 +8675,7 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
             <ident system="http://cyber.mil/cci">CCI-001405</ident>
             <ident system="http://cyber.mil/cci">CCI-002130</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238240r853418_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010102" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238240r853418_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010102" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000018</ident>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
@@ -8684,7 +8684,7 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
             <ident system="http://cyber.mil/cci">CCI-001405</ident>
             <ident system="http://cyber.mil/cci">CCI-002130</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238241r853419_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010103" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238241r853419_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010103" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
             <ident system="http://cyber.mil/cci">CCI-001403</ident>
@@ -8692,7 +8692,7 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
             <ident system="http://cyber.mil/cci">CCI-001405</ident>
             <ident system="http://cyber.mil/cci">CCI-002130</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238242r853420_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010104" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238242r853420_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010104" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000018</ident>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
@@ -8701,143 +8701,143 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
             <ident system="http://cyber.mil/cci">CCI-001405</ident>
             <ident system="http://cyber.mil/cci">CCI-002130</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238244r653907_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010118" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238244r653907_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010118" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000140</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238249r653922_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010133" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238249r653922_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010133" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000171</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238250r653925_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010134" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238250r653925_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010134" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000171</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238251r653928_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010135" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238251r653928_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010135" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000171</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238252r653931_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010136" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238252r653931_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010136" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238253r653934_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010137" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238253r653934_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010137" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238254r653937_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010138" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238254r653937_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010138" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238255r653940_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010139" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238255r653940_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010139" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238256r653943_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010140" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238256r653943_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010140" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238257r653946_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010141" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238257r653946_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010141" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238258r808474_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010142" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238258r808474_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010142" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238264r808477_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010148" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238264r808477_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010148" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238268r808480_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010152" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238268r808480_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010152" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238271r808483_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010155" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238271r808483_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010155" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238277r654006_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010161" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238277r654006_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010161" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238278r654009_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010162" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238278r654009_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010162" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238279r654012_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010163" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238279r654012_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010163" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238280r654015_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010164" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238280r654015_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010164" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238281r654018_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010165" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238281r654018_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010165" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238282r654021_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010166" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238282r654021_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010166" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238283r654024_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010167" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238283r654024_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010167" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238284r654027_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010168" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238284r654027_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010168" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238285r654030_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010169" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238285r654030_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010169" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238286r654033_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010170" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238286r654033_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010170" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238287r654036_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010171" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238287r654036_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010171" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238288r833012_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010172" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238288r833012_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010172" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238289r654042_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010173" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238289r654042_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010173" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238290r654045_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010174" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238290r654045_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010174" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238291r654048_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010175" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238291r654048_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010175" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238292r654051_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010176" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238292r654051_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010176" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238293r654054_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010177" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238293r654054_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010177" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238294r654057_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010178" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238294r654057_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010178" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238295r808486_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010179" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238295r808486_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010179" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238297r802387_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010181" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238297r802387_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010181" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238298r853421_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010182" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238298r853421_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010182" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000130</ident>
             <ident system="http://cyber.mil/cci">CCI-000131</ident>
@@ -8859,166 +8859,166 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
             <ident system="http://cyber.mil/cci">CCI-001882</ident>
             <ident system="http://cyber.mil/cci">CCI-001914</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238299r654072_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010198" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238299r654072_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010198" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001464</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238300r654075_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010199" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238300r654075_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010199" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001493</ident>
             <ident system="http://cyber.mil/cci">CCI-001494</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238301r654078_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010200" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238301r654078_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010200" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001493</ident>
             <ident system="http://cyber.mil/cci">CCI-001494</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238302r654081_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010201" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238302r654081_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010201" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001493</ident>
             <ident system="http://cyber.mil/cci">CCI-001494</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238304r853422_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010211" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238304r853422_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010211" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-002233</ident>
             <ident system="http://cyber.mil/cci">CCI-002234</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238310r832953_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010267" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238310r832953_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010267" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238315r654120_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010277" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238315r654120_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010277" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238316r654123_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010278" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238316r654123_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010278" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238317r654126_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010279" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238317r654126_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010279" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238318r654129_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010296" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238318r654129_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010296" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238319r654132_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010297" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238319r654132_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010297" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238320r832956_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010298" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238320r832956_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010298" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000172</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238323r654144_rule" time="2022-11-20T04:57:45" severity="low" version="UBTU-20-010400" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238323r654144_rule" time="2022-11-20T05:27:21" severity="low" version="UBTU-20-010400" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000054</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238325r654150_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010404" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238325r654150_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010404" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000803</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238326r654153_rule" time="2022-11-20T04:57:45" severity="high" version="UBTU-20-010405" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238326r654153_rule" time="2022-11-20T05:27:21" severity="high" version="UBTU-20-010405" weight="10.000000">
             <result>pass</result>
             <ident system="http://cyber.mil/cci">CCI-000197</ident>
             <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
               <check-content-ref name="oval:mil.disa.stig.ubuntu2004:def:205" href="#oval0"/>
             </check>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238327r654156_rule" time="2022-11-20T04:57:45" severity="high" version="UBTU-20-010406" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238327r654156_rule" time="2022-11-20T05:27:21" severity="high" version="UBTU-20-010406" weight="10.000000">
             <result>pass</result>
             <ident system="http://cyber.mil/cci">CCI-000381</ident>
             <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
               <check-content-ref name="oval:mil.disa.stig.ubuntu2004:def:206" href="#oval0"/>
             </check>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238330r654165_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010409" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238330r654165_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010409" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000795</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238333r654174_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010412" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238333r654174_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010412" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001095</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238337r654186_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010416" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238337r654186_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010416" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001312</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238338r654189_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010417" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238338r654189_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010417" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001314</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238339r654192_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010418" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238339r654192_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010418" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001314</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238340r654195_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010419" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238340r654195_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010419" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001314</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238341r654198_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010420" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238341r654198_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010420" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001314</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238342r654201_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010421" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238342r654201_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010421" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001314</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238343r654204_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010422" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238343r654204_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010422" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001314</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238354r853429_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010433" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238354r853429_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010433" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-002314</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238357r853432_rule" time="2022-11-20T04:57:45" severity="low" version="UBTU-20-010436" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238357r853432_rule" time="2022-11-20T05:27:21" severity="low" version="UBTU-20-010436" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-002046</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238359r853434_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010438" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238359r853434_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010438" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001749</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238363r853438_rule" time="2022-11-20T04:57:45" severity="high" version="UBTU-20-010442" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238363r853438_rule" time="2022-11-20T05:27:21" severity="high" version="UBTU-20-010442" weight="10.000000">
             <result>fail</result>
             <ident system="http://cyber.mil/cci">CCI-002450</ident>
             <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
               <check-content-ref name="oval:mil.disa.stig.ubuntu2004:def:228" href="#oval0"/>
             </check>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238369r853446_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010448" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238369r853446_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010448" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-002824</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238370r853447_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010449" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238370r853447_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010449" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-002617</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238371r853448_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010450" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238371r853448_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010450" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-002696</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238373r858539_rule" time="2022-11-20T04:57:45" severity="low" version="UBTU-20-010453" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-238373r858539_rule" time="2022-11-20T05:27:21" severity="low" version="UBTU-20-010453" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-000052</ident>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-251503r808506_rule" time="2022-11-20T04:57:45" severity="high" version="UBTU-20-010462" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-251503r808506_rule" time="2022-11-20T05:27:21" severity="high" version="UBTU-20-010462" weight="10.000000">
             <result>pass</result>
             <ident system="http://cyber.mil/cci">CCI-000366</ident>
             <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
               <check-content-ref name="oval:mil.disa.stig.ubuntu2004:def:238" href="#oval0"/>
             </check>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-251504r832977_rule" time="2022-11-20T04:57:45" severity="high" version="UBTU-20-010463" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-251504r832977_rule" time="2022-11-20T05:27:21" severity="high" version="UBTU-20-010463" weight="10.000000">
             <result>pass</result>
             <ident system="http://cyber.mil/cci">CCI-000366</ident>
             <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
               <check-content-ref name="oval:mil.disa.stig.ubuntu2004:def:237" href="#oval0"/>
             </check>
           </rule-result>
-          <rule-result idref="xccdf_mil.disa.stig_rule_SV-251505r853450_rule" time="2022-11-20T04:57:45" severity="medium" version="UBTU-20-010461" weight="10.000000">
+          <rule-result idref="xccdf_mil.disa.stig_rule_SV-251505r853450_rule" time="2022-11-20T05:27:21" severity="medium" version="UBTU-20-010461" weight="10.000000">
             <result>notselected</result>
             <ident system="http://cyber.mil/cci">CCI-001958</ident>
           </rule-result>
@@ -9033,7 +9033,7 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
             <oval:product_name>repotool</oval:product_name>
             <oval:product_version>1.2.16</oval:product_version>
             <oval:schema_version>5.10</oval:schema_version>
-            <oval:timestamp>2022-11-20T04:57:45</oval:timestamp>
+            <oval:timestamp>2022-11-20T05:27:21</oval:timestamp>
           </generator>
           <directives>
             <definition_true reported="true" content="full"/>
@@ -9095,14 +9095,14 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
               </definitions>
               <tests>
                 <test test_id="oval:mil.disa.stig.ubuntu2004:tst:100" version="1" check="all" result="true">
-                  <tested_item item_id="1665111" result="true"/>
+                  <tested_item item_id="1586661" result="true"/>
                 </test>
               </tests>
               <oval_system_characteristics xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:unix-sys="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#unix" xmlns:ind-sys="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent" xmlns:lin-sys="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux" xmlns:win-sys="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#windows" xmlns="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5 oval-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent independent-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#unix unix-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux linux-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 oval-common-schema.xsd">
                 <generator>
                   <oval:product_name>repotool</oval:product_name>
                   <oval:schema_version>5.10</oval:schema_version>
-                  <oval:timestamp>2022-11-20T04:57:45</oval:timestamp>
+                  <oval:timestamp>2022-11-20T05:27:21</oval:timestamp>
                 </generator>
                 <system_info>
                   <os_name>Linux</os_name>
@@ -9122,8 +9122,8 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
                     </interface>
                     <interface>
                       <interface_name>enp0s8</interface_name>
-                      <ip_address>192.168.10.34</ip_address>
-                      <mac_address>08:00:27:DC:91:C6</mac_address>
+                      <ip_address>192.168.10.35</ip_address>
+                      <mac_address>08:00:27:D0:B0:63</mac_address>
                     </interface>
                     <interface>
                       <interface_name>lo</interface_name>
@@ -9137,23 +9137,23 @@ Peripherals include, but are not limited to, such devices as flash drives, exter
                     </interface>
                     <interface>
                       <interface_name>enp0s8</interface_name>
-                      <ip_address>2409:11:4ac0:2a00:a00:27ff:fedc:91c6</ip_address>
-                      <mac_address>08:00:27:DC:91:C6</mac_address>
+                      <ip_address>2409:11:4ac0:2a00:a00:27ff:fed0:b063</ip_address>
+                      <mac_address>08:00:27:D0:B0:63</mac_address>
                     </interface>
                     <interface>
                       <interface_name>enp0s8</interface_name>
-                      <ip_address>fe80::a00:27ff:fedc:91c6</ip_address>
-                      <mac_address>08:00:27:DC:91:C6</mac_address>
+                      <ip_address>fe80::a00:27ff:fed0:b063</ip_address>
+                      <mac_address>08:00:27:D0:B0:63</mac_address>
                     </interface>
                   </interfaces>
                 </system_info>
                 <collected_objects>
                   <object id="oval:mil.disa.stig.ubuntu2004:obj:100" version="1" flag="complete">
-                    <reference item_ref="1665111"/>
+                    <reference item_ref="1586661"/>
                   </object>
                 </collected_objects>
                 <system_data>
-                  <ind-sys:textfilecontent_item id="1665111" status="exists">
+                  <ind-sys:textfilecontent_item id="1586661" status="exists">
                     <ind-sys:filepath>/etc/lsb-release</ind-sys:filepath>
                     <ind-sys:path>/etc</ind-sys:path>
                     <ind-sys:filename>lsb-release</ind-sys:filename>
@@ -9178,7 +9178,7 @@ DISTRIB_RELEASE=20.04</ind-sys:text>
             <oval:product_name>cpe:/a:open-scap:oscap</oval:product_name>
             <oval:product_version>1.2.16</oval:product_version>
             <oval:schema_version>5.10</oval:schema_version>
-            <oval:timestamp>2022-11-20T04:57:45</oval:timestamp>
+            <oval:timestamp>2022-11-20T05:27:21</oval:timestamp>
           </generator>
           <directives>
             <definition_true reported="true" content="full"/>
@@ -13662,13 +13662,13 @@ Satisfies: SRG-OS-000030-GPOS-00011, SRG-OS-000031-GPOS-00012</description>
                 <test test_id="oval:mil.disa.stig.ubuntu2004:tst:11200" version="1" check="all" result="not evaluated"/>
                 <test test_id="oval:mil.disa.stig.ubuntu2004:tst:11300" version="1" check="all" result="not evaluated"/>
                 <test test_id="oval:mil.disa.stig.ubuntu2004:tst:11400" version="1" check="all" result="true">
-                  <tested_item item_id="1665161" result="true"/>
+                  <tested_item item_id="1586711" result="true"/>
                 </test>
                 <test test_id="oval:mil.disa.stig.ubuntu2004:tst:11401" version="1" check="all" result="true">
-                  <tested_item item_id="1665162" result="true"/>
+                  <tested_item item_id="1586712" result="true"/>
                 </test>
                 <test test_id="oval:mil.disa.stig.ubuntu2004:tst:11500" version="1" check="all" result="true">
-                  <tested_item item_id="1665163" result="true"/>
+                  <tested_item item_id="1586713" result="true"/>
                 </test>
                 <test test_id="oval:mil.disa.stig.ubuntu2004:tst:11600" version="1" check_existence="all_exist" check="all" result="not evaluated"/>
                 <test test_id="oval:mil.disa.stig.ubuntu2004:tst:11700" version="1" check="all" result="not evaluated"/>
@@ -13877,7 +13877,7 @@ Satisfies: SRG-OS-000030-GPOS-00011, SRG-OS-000031-GPOS-00012</description>
                 <generator>
                   <oval:product_name>cpe:/a:open-scap:oscap</oval:product_name>
                   <oval:schema_version>5.10</oval:schema_version>
-                  <oval:timestamp>2022-11-20T04:57:45</oval:timestamp>
+                  <oval:timestamp>2022-11-20T05:27:21</oval:timestamp>
                 </generator>
                 <system_info>
                   <os_name>Linux</os_name>
@@ -13897,8 +13897,8 @@ Satisfies: SRG-OS-000030-GPOS-00011, SRG-OS-000031-GPOS-00012</description>
                     </interface>
                     <interface>
                       <interface_name>enp0s8</interface_name>
-                      <ip_address>192.168.10.34</ip_address>
-                      <mac_address>08:00:27:DC:91:C6</mac_address>
+                      <ip_address>192.168.10.35</ip_address>
+                      <mac_address>08:00:27:D0:B0:63</mac_address>
                     </interface>
                     <interface>
                       <interface_name>lo</interface_name>
@@ -13912,13 +13912,13 @@ Satisfies: SRG-OS-000030-GPOS-00011, SRG-OS-000031-GPOS-00012</description>
                     </interface>
                     <interface>
                       <interface_name>enp0s8</interface_name>
-                      <ip_address>2409:11:4ac0:2a00:a00:27ff:fedc:91c6</ip_address>
-                      <mac_address>08:00:27:DC:91:C6</mac_address>
+                      <ip_address>2409:11:4ac0:2a00:a00:27ff:fed0:b063</ip_address>
+                      <mac_address>08:00:27:D0:B0:63</mac_address>
                     </interface>
                     <interface>
                       <interface_name>enp0s8</interface_name>
-                      <ip_address>fe80::a00:27ff:fedc:91c6</ip_address>
-                      <mac_address>08:00:27:DC:91:C6</mac_address>
+                      <ip_address>fe80::a00:27ff:fed0:b063</ip_address>
+                      <mac_address>08:00:27:D0:B0:63</mac_address>
                     </interface>
                   </interfaces>
                 </system_info>
@@ -13926,13 +13926,13 @@ Satisfies: SRG-OS-000030-GPOS-00011, SRG-OS-000031-GPOS-00012</description>
                   <object id="oval:mil.disa.stig.ubuntu2004:obj:10100" version="2" flag="does not exist"/>
                   <object id="oval:mil.disa.stig.ubuntu2004:obj:10400" version="2" flag="does not exist"/>
                   <object id="oval:mil.disa.stig.ubuntu2004:obj:11400" version="1" flag="complete">
-                    <reference item_ref="1665161"/>
+                    <reference item_ref="1586711"/>
                   </object>
                   <object id="oval:mil.disa.stig.ubuntu2004:obj:11401" version="1" flag="complete">
-                    <reference item_ref="1665162"/>
+                    <reference item_ref="1586712"/>
                   </object>
                   <object id="oval:mil.disa.stig.ubuntu2004:obj:11500" version="1" flag="complete">
-                    <reference item_ref="1665163"/>
+                    <reference item_ref="1586713"/>
                   </object>
                   <object id="oval:mil.disa.stig.ubuntu2004:obj:20500" version="1" flag="does not exist"/>
                   <object id="oval:mil.disa.stig.ubuntu2004:obj:20600" version="1" flag="does not exist"/>
@@ -13941,7 +13941,7 @@ Satisfies: SRG-OS-000030-GPOS-00011, SRG-OS-000031-GPOS-00012</description>
                   <object id="oval:mil.disa.stig.ubuntu2004:obj:23800" version="1" flag="does not exist"/>
                 </collected_objects>
                 <system_data>
-                  <ind-sys:textfilecontent_item id="1665163" status="exists">
+                  <ind-sys:textfilecontent_item id="1586713" status="exists">
                     <ind-sys:filepath>/etc/ssh/sshd_config</ind-sys:filepath>
                     <ind-sys:path>/etc/ssh</ind-sys:path>
                     <ind-sys:filename>sshd_config</ind-sys:filename>
@@ -13951,7 +13951,7 @@ Satisfies: SRG-OS-000030-GPOS-00011, SRG-OS-000031-GPOS-00012</description>
                     <ind-sys:text>X11Forwarding no</ind-sys:text>
                     <ind-sys:subexpression>no</ind-sys:subexpression>
                   </ind-sys:textfilecontent_item>
-                  <ind-sys:textfilecontent_item id="1665162" status="exists">
+                  <ind-sys:textfilecontent_item id="1586712" status="exists">
                     <ind-sys:filepath>/etc/ssh/sshd_config</ind-sys:filepath>
                     <ind-sys:path>/etc/ssh</ind-sys:path>
                     <ind-sys:filename>sshd_config</ind-sys:filename>
@@ -13961,7 +13961,7 @@ Satisfies: SRG-OS-000030-GPOS-00011, SRG-OS-000031-GPOS-00012</description>
                     <ind-sys:text>PermitUserEnvironment no</ind-sys:text>
                     <ind-sys:subexpression>no</ind-sys:subexpression>
                   </ind-sys:textfilecontent_item>
-                  <ind-sys:textfilecontent_item id="1665161" status="exists">
+                  <ind-sys:textfilecontent_item id="1586711" status="exists">
                     <ind-sys:filepath>/etc/ssh/sshd_config</ind-sys:filepath>
                     <ind-sys:path>/etc/ssh</ind-sys:path>
                     <ind-sys:filename>sshd_config</ind-sys:filename>
