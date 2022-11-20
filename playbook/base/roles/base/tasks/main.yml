@@ -30,12 +30,3 @@
     install_recommends: false
     name:
       - libopenscap8
-
-# see https://adamtheautomator.com/openscap/
-- name: Download scap security guide
-  become: true
-  ansible.builtin.unarchive:
-    src: https://github.com/ComplianceAsCode/content/releases/download/v0.1.64/scap-security-guide-0.1.64.zip
-    dest: /opt/
-    remote_src: true
-    # validate_certs: no

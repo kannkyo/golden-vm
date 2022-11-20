@@ -38,62 +38,69 @@
 - name: Evaluate OS
   hosts: all
   tasks:
-    - name: Evaluate content_profile_cis_level1_server
+    - name: Create stig directory
       become: true
-      ansible.builtin.shell:
-        cmd: |
-          oscap xccdf eval \
-            --results-arf /home/vagrant/ssg-ubuntu2004-content_profile_cis_level1_server-results.xml \
-            --report /home/vagrant/ssg-ubuntu2004-content_profile_cis_level1_server-report.html \
-            --profile xccdf_org.ssgproject.content_profile_cis_level1_server \
-            /opt/scap-security-guide-0.1.64/ssg-ubuntu2004-ds.xml; exit 0
+      ansible.builtin.file:
+        path: /opt/stigs/
+        state: directory
+        mode: '0755'
 
-    - name: Evaluate content_profile_cis_level1_workstation
-      become: true
-      ansible.builtin.shell:
-        cmd: |
-          oscap xccdf eval \
-            --results-arf /home/vagrant/ssg-ubuntu2004-content_profile_cis_level1_workstation-results.xml \
-            --report /home/vagrant/ssg-ubuntu2004-content_profile_cis_level1_workstation-report.html \
-            --profile xccdf_org.ssgproject.content_profile_cis_level1_workstation \
-            /opt/scap-security-guide-0.1.64/ssg-ubuntu2004-ds.xml; exit 0
+    - name: Create reports directory
+      ansible.builtin.file:
+        path: "{{ (lookup('env', 'HOME')) }}/reports"
+        state: directory
+        mode: '0755'
 
-    - name: Evaluate content_profile_cis_level2_server
+    # see https://adamtheautomator.com/openscap/
+    - name: Download scap security guide
       become: true
-      ansible.builtin.shell:
-        cmd: |
-          oscap xccdf eval \
-            --results-arf /home/vagrant/ssg-ubuntu2004-content_profile_cis_level2_server-results.xml \
-            --report /home/vagrant/ssg-ubuntu2004-content_profile_cis_level2_server-report.html \
-            --profile xccdf_org.ssgproject.content_profile_cis_level2_server \
-            /opt/scap-security-guide-0.1.64/ssg-ubuntu2004-ds.xml; exit 0
+      ansible.builtin.unarchive:
+        src: https://github.com/ComplianceAsCode/content/releases/download/v0.1.64/scap-security-guide-0.1.64.zip
+        dest: /opt/
+        remote_src: true
 
-    - name: Evaluate content_profile_cis_level2_workstation
+    # see https://adamtheautomator.com/openscap/
+    - name: Download scap security guide
       become: true
-      ansible.builtin.shell:
-        cmd: |
-          oscap xccdf eval \
-            --results-arf /home/vagrant/ssg-ubuntu2004-content_profile_cis_level2_workstation-results.xml \
-            --report /home/vagrant/ssg-ubuntu2004-content_profile_cis_level2_workstation-report.html \
-            --profile xccdf_org.ssgproject.content_profile_cis_level2_workstation \
-            /opt/scap-security-guide-0.1.64/ssg-ubuntu2004-ds.xml; exit 0
+      ansible.builtin.unarchive:
+        src: https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_CAN_Ubuntu_20-04_LTS_V1R4_STIG_SCAP_1-2_Benchmark.zip
+        dest: /opt/stigs/
+        remote_src: true
 
-    - name: Evaluate content_profile_standard
+    - name: Evaluate by DISA STIG
       become: true
+      loop:
+        - stig_profile_MAC-1_Classified
+        - stig_profile_MAC-1_Public
+        - stig_profile_MAC-1_Sensitive
+        - stig_profile_MAC-2_Classified
+        - stig_profile_MAC-2_Public
+        - stig_profile_MAC-2_Sensitive
+        - stig_profile_MAC-3_Classified
+        - stig_profile_MAC-3_Public
+        - stig_profile_MAC-3_Sensitive
+        - stig_profile_CAT_I_Only
       ansible.builtin.shell:
         cmd: |
           oscap xccdf eval \
-            --results-arf /home/vagrant/ssg-ubuntu2004-content_profile_standard-results.xml \
-            --report /home/vagrant/ssg-ubuntu2004-content_profile_standard-report.html \
-            --profile xccdf_org.ssgproject.content_profile_standard \
-            /opt/scap-security-guide-0.1.64/ssg-ubuntu2004-ds.xml; exit 0
+            --results-arf /home/vagrant/reports/{{ item }}-results.xml \
+            --report /home/vagrant/reports/{{ item }}-report.html \
+            --profile xccdf_mil.disa.{{ item }} \
+            /opt/stigs/U_CAN_Ubuntu_20-04_LTS_V1R4_STIG_SCAP_1-2_Benchmark.xml; exit 0
 
-    - name: Evaluate content_profile_stig
+    - name: Evaluate by CIS benchmark
+      loop:
+        - content_profile_cis_level1_server
+        - content_profile_cis_level1_workstation
+        - content_profile_cis_level2_server
+        - content_profile_cis_level2_workstation
+        - content_profile_standard
+        - content_profile_stig
       become: true
       ansible.builtin.shell:
         cmd: |
           oscap xccdf eval \
-            --results-arf /home/vagrant/ssg-ubuntu2004-content_profile_stig-results.xml \
-            --report /home/vagrant/ssg-ubuntu2004-content_profile_stig-report.html \
-            --profile xccdf_org.ssgproject.content_profile_stig \
+            --results-arf /home/vagrant/reports/ssg-ubuntu2004-{{ item }}-results.xml \
+            --report /home/vagrant/reports/ssg-ubuntu2004-{{ item }}-report.html \
+            --profile xccdf_org.ssgproject.{{ item }} \
             /opt/scap-security-guide-0.1.64/ssg-ubuntu2004-ds.xml; exit 0
