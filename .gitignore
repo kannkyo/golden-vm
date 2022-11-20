@@ -126,7 +126,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+# .env
 .venv
 env/
 venv/
@@ -166,3 +166,4 @@ cython_debug/
 #.idea/
 
 /.ini
+*.box
