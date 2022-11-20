@@ -28,6 +28,7 @@
 ###############################################################################
 
 - hosts: all
+  become: true
   vars:
     var_password_pam_dcredit: !!str -1
     var_password_pam_dictcheck: !!str 1

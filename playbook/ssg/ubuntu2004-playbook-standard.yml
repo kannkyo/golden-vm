@@ -25,6 +25,7 @@
 ###############################################################################
 
 - hosts: all
+  become: true
   vars:
     var_sshd_set_keepalive: !!str 0
   tasks:
