@@ -6,11 +6,12 @@ VAGRANT_USER=
 VAGRANT_CLOUD_TOKEN=
 
 . .ini
+. .env
 
-BOX_NAME=hard/ubuntu-focal64
-BOX_VERSION=$1
+BOX_NAME=hard/$VM_NAME
+BOX_VERSION=$BOX_VERSION
 BOX_PROVIDER=virtualbox
-BOX_PATH=golden-vm.box
+BOX_PATH=$VM_NAME.box
 
 echo ========================================================
 echo VAGRANT_USER=$VAGRANT_USER
@@ -22,7 +23,7 @@ echo BOX_PATH=$BOX_PATH
 echo ========================================================
 
 # Create vm box file
-# vagrant package default --output $BOX_PATH
+vagrant package default --output $BOX_PATH
 
 # Get upload path
 response=$(curl \

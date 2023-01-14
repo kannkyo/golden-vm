@@ -167,3 +167,6 @@ cython_debug/
 
 /.ini
 *.box
+/*.html
+/*.xml
+/*.json
