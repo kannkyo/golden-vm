@@ -1,27 +1,28 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# load .env file
-Dotenv.load
-
 Vagrant.configure("2") do |config|
+  # load .env file
+  config.env.enable
+
   # see https://app.vagrantup.com/ubuntu/boxes/focal64
-  config.vm.box = "#{ENV['BOX_NAME']}"
-  config.vm.box_version = "#{ENV['BOX_VERSION']}"
+  config.vm.box = ENV['BOX_NAME']
+  config.vm.box_version = ENV['BOX_VERSION']
   config.vm.box_check_update = false
 
   # Automaticaly install plugins to local project
   config.vagrant.plugins = [
-    "dotenv",
+    "vagrant-env",
     "vagrant-disksize",
     "vagrant-vbguest"
   ]
+
 
   # Use Virtualbox's bridge adopter
   config.vm.network "public_network"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "#{ENV['VM_NAME']}"
+    vb.name = ENV['VM_NAME']
     vb.gui = false
     vb.cpus = 2
     vb.memory = 2048
