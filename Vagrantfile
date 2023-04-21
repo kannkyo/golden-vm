@@ -18,23 +18,16 @@ Vagrant.configure("2") do |config|
   ]
 
 
-  # Use Virtualbox's bridge adopter
-  config.vm.network "public_network"
-
   config.vm.provider "virtualbox" do |vb|
     vb.name = ENV['VM_NAME']
     vb.gui = false
-    vb.cpus = 2
-    vb.memory = 2048
+    vb.cpus = 4
+    vb.memory = 4096
   end
 
   config.vm.provision "ansible_local" do |ansible|
     ansible.playbook = "playbook/base/site.yml"
   end
-
-  # config.vm.provision "ansible_local" do |ansible|
-  #   ansible.playbook = "playbook/ctf/site.yml"
-  # end
 
   # FIXME: if use cis benchmark : [Errno 2] No such file or directory: b'/usr/sbin/aide'
   config.vm.provision "ansible_local" do |ansible|
