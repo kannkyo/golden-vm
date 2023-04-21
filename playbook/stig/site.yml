@@ -1,5 +1,0 @@
-- name: STIG Hardening Playbook
-  hosts: all
-  become: true
-  roles:
-    - ubuntu2004STIG
