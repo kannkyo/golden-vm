@@ -1,0 +1,19 @@
+- name: Install ssg packages
+  become: true
+  ansible.builtin.apt:
+    install_recommends: false
+    upgrade: true
+    update_cache: true
+    name:
+      # utility packages
+      - wget
+      - unzip
+      - ansible
+      # ssg packages
+      - ssg-base
+      - ssg-debderived
+      - ssg-debian
+      - ssg-nondebian
+      - ssg-applications
+      # oscap package
+      - libopenscap8
