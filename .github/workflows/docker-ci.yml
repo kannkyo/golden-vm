@@ -1,0 +1,33 @@
+name: docker ci
+
+on:
+  push:
+
+env:
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        directory:
+          - ubuntu-focal64-cis-level1-server
+          - ubuntu-focal64-stig
+    defaults:
+      run:
+        working-directory: ${{ matrix.directory }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: build
+        run: docker build . --file Dockerfile --tag ${{ env.IMAGE_NAME }}:$(date +%s)
+
+      - name: scan by docker benchmark
+        id: benchmark_dockerfile
+        uses: sysdiglabs/benchmark-dockerfile@v1.0.0
+        with:
+          directory: ${{ matrix.directory }}
+
+      - name: output docker benchmark scan results
+        run: echo '${{ steps.benchmark_dockerfile.outputs.violation_report }}' | jq '.cis_docker_benchmark_violation_report'
